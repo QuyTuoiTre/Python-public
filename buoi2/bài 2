@@ -1,0 +1,20 @@
+luong = int(input("nhập số tiền phải chi cho nhân viên(triệu): "))
+
+if luong >= 15: 
+    thue = luong*0.3
+    luongtrong = luong - thue
+    print("thuế: ", thue )
+    print ("thu nhập: ", luongtrong)
+elif luong > 7 and luong < 15:
+    thue = luong*0.2
+    luongtrong = luong- thue 
+    print("thuế: ", thue )
+    print ("thu nhập: ", luongtrong)
+else: 
+    thue = luong*0.1
+    luongtrong = luong - thue
+    print("thuế: ", thue )
+    print ("thu nhập: ", luongtrong)        
+
+
+

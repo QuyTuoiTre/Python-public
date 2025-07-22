@@ -1,0 +1,11 @@
+n = int(input("nhập chữ số n: "))
+dem = 0 
+tong = 0
+hop = n
+while hop > 0:
+    so = hop % 10 
+    tong += so
+    dem += 1
+    hop = hop // 10 
+print("tổng hai chữ số là: ", tong )
+print ("số các chữ số là: ", dem )

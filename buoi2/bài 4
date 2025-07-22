@@ -1,0 +1,11 @@
+n = int(input("số xu bạn có: "))
+giabia =28 
+bia = n // giabia
+tongbia = bia 
+vobia = bia
+while vobia >= 3: 
+    doi = vobia // 3
+    tongbia += doi 
+    vobia = doi + (vobia % 3)
+print("số chai bia mua được là: ", tongbia )    
+
