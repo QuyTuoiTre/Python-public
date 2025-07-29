@@ -1,0 +1,31 @@
+
+s1 = input("Nhập chuỗi s1: ")
+s2 = input("Nhập chuỗi s2: ")
+
+
+print("Đảo ngược s1:", s1[::-1])
+
+
+a = int(input("Nhập a (vị trí bắt đầu): "))
+b = int(input("Nhập b (vị trí kết thúc): "))
+
+
+if 1 <= a < b <= len(s2):
+    
+    a -= 1
+    b -= 1
+    
+    s2_new = s2[:a] + s2[a:b+1][::-1] + s2[b+1:]
+    print("Chuỗi s2 sau khi đảo ngược đoạn [a, b]:", s2_new)
+else:
+    print("Giá trị a, b không hợp lệ")
+
+s3 = ''.join(c for i, c in enumerate(s1) if i % 2 != 0)
+print("Chuỗi s1 sau khi xóa ký tự ở vị trí chẵn (s3):", s3)
+
+s4 = ''
+for c1, c2 in zip(s1, s2):
+    s4 += c1 + c2
+
+s4 += s1[len(s2):] + s2[len(s1):]
+print("Chuỗi đan xen s1 và s2 (s4):", s4)

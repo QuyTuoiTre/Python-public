@@ -1,0 +1,24 @@
+k = int(input("Nhập số phần tử của list: "))
+a = []
+print("Nhập các phần tử của list:")
+for i in range(k):
+    x = int(input(f"a[{i}] = "))
+    a.append(x)
+n = int(input("Nhập số dòng n: "))
+m = int(input("Nhập số cột m: "))
+if n * m > k:
+    print("NO")
+else:
+    X = []  
+    idx = 0 
+
+    for i in range(n):
+        row = []
+        for j in range(m):
+            row.append(a[idx])
+            idx += 1
+        X.append(row)
+
+    print("Ma trận thu được:")
+    for row in X:
+        print(row)
